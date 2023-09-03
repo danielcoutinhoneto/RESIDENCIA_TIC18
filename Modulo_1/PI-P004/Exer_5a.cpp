@@ -5,19 +5,38 @@ using namespace std;
 
 int main(void){
 
-    int inteiro = 3;
-    unsigned int unsigned_int = 3;
-    unsigned long int unsigned_long_int;
-    float flutuante = 3.56;
-    long int long_int ;
-    double doubleNum = 3.4;
+    nt i = 5;
+    float f = 0.0;
+    double d = 0.5;
+    bool b = false;
 
-    cout << " int: " << inteiro << " em boolean: "<< (bool)inteiro<< endl;
-    cout << " unsigned int: " << unsigned_int << " em boolean: "<< (bool)unsigned_int<< endl;
-    cout << " unsigned long int: " << unsigned_long_int << " em boolean: "<< (bool)unsigned_long_int<< endl;
-    cout << " float: " << flutuante << " em boolean: "<< (bool)flutuante<< endl;
-    cout << " long int: " << long_int << " em boolean: "<< (bool)long_int<< endl;
-    cout << " double: " << doubleNum << " em boolean: "<< (bool)doubleNum<< endl;
-    
+    if (i) {
+        cout << "Int - true" << endl;
+    } else {
+        cout << "Int - false" << endl;
+    }
+
+    if (f) {
+        cout << "float - true" << endl;
+    } else {
+        cout << "float - false" << endl;
+    }
+
+    if (d) {
+        cout << "double - true" << endl;
+    } else {
+        cout << "double - false" << endl;
+    }
+
+    if (b) {
+        cout << "bool - true" << endl;
+    } else {
+        cout << "bool - false" << endl;
+    }
+
+    /*
+       Nota-se que independente do tipo, se o valor for maior que 0 ele assume o valor de true.
+    */
+
     return 0;
 }
