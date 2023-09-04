@@ -5,7 +5,7 @@ using namespace std;
 
 int main(void){
 
-    nt i = 5;
+    int i = 5;
     float f = 0.0;
     double d = 0.5;
     bool b = false;
