@@ -15,11 +15,5 @@ int main(void) {
 
     cout <<"o menor numero é: "<< z << endl;
 
-
-
-
-
-
-
-return 0;
+    return 0;
 }

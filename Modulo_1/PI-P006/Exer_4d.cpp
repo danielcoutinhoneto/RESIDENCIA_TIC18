@@ -15,11 +15,5 @@ int main(void) {
 
     cout <<"a média da soma dos pontos flutuantes é: "<< z << endl;
 
-
-
-
-
-
-
-return 0;
+    return 0;
 }

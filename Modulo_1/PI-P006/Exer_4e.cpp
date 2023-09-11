@@ -15,11 +15,5 @@ int main(void) {
 
     cout <<"o resultado do produto é: "<< z << endl;
 
-
-
-
-
-
-
-return 0;
+    return 0;
 }

@@ -15,11 +15,5 @@ int main(void) {
 
     cout <<"o resultado da soma é: "<< z << endl;
 
-
-
-
-
-
-
-return 0;
+    return 0;
 }
