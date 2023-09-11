@@ -45,7 +45,7 @@ int main() {
     getline(cin, sorveteria1.nome);
 
     cout << "Digite o endereço da sorveteria: ";
-    getline(std::cin, sorveteria1.endereco);
+    getline(cin, sorveteria1.endereco);
 
     sorveteria1.saboresDisponiveis = {
         {"Morango", 5.0},
@@ -64,7 +64,7 @@ int main() {
 
         string saborEscolhido;
         cout << "Escolha um sabor: ";
-        getline(std::cin, saborEscolhido);
+        getline(cin, saborEscolhido);
 
         int quantidadeComprada;
         cout << "Quantos sorvetes de " << saborEscolhido << " você deseja comprar? ";
@@ -84,7 +84,7 @@ int main() {
         cout << "Deseja continuar comprando? (S/N): ";
         cin >> continuarComprando;
 
-        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     } while (continuarComprando == 'S' || continuarComprando == 's');
 
