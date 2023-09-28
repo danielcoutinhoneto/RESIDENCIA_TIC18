@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string.h>
 #include <vector>
+#include <fstream>
+
 
 using namespace std;
 
@@ -131,6 +133,23 @@ int mausoleu::contador = 1;
 int main() {
     vector<mausoleu> mausoleus;
     limpaTela();
+
+    ifstream outMausoleus;
+
+// Abrindo 0 arquivo para leitura
+    outMausoleus.open("mausoleus.txt", ios_base::app);
+    if (outMausoleus.is_open()) {
+        string linha;
+        while (outMausoleus.eof() == false) {
+            getline(outMausoleus, linha);
+            cout << linha << endl;
+        }
+        outMausoleus.close();
+    } else {
+        cout << "Erro ao abrir o arquivo." << endl;
+    }
+    return 0;
+    
     int op;
     do {
         cout << "Opcoes" << endl;
@@ -141,10 +160,20 @@ int main() {
         cout << "Digite opcao: ";
         cin >> op;
         cin.ignore();
+
         if (op==1) {
             mausoleu novo = mausoleu::leNovo();
             mausoleus.push_back(novo);
+            
+            ofstream outMausoleus;
+            outMausoleus.open("mausoleus.txt", ios_base::app);
+            if (outMausoleus.is_open()) {
+                outMausoleus << novo.getContador() << endl;
+                outMausoleus << novo.getLocalizacao() << endl;
+                outMausoleus.close();
+            }
         }
+
         if (op==2) {
             for (mausoleu m:mausoleus) {
                 m.listaDados();
@@ -155,6 +184,7 @@ int main() {
             //localizar um mausoleu
             //inserir paciente no mausoleu
         }
+
     } while (op != 0);
     return 0;
 }
