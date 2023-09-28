@@ -36,10 +36,13 @@ void Aviao::ini(int tp)
 int main()
 {
     Aviao *av1 = new Aviao();
+    Aviao *av2 = new Aviao();
 
     av1->ini(3);
+    av2->ini(1);
 
     cout << av1->velMax << endl;
+    cout << av2->velMax << endl;
 
     return 0;
 }
