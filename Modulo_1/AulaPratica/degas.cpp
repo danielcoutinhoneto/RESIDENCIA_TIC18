@@ -5,8 +5,9 @@
 
 using namespace std;
 
-class Estado {
+class Aluno {
     string nome;
+    int idAluno;
     public:
     string getNome() {
         return nome;
@@ -14,9 +15,15 @@ class Estado {
     void setNome(string _nome) {
         nome = _nome;
     };
+    string getIdAluno() {
+        return idAluno;
+    };
+    void setIdAluno(string _idAluno) {
+        nome = _idAluno;
+    };
 };
 
-class Cidade{
+class Turma{
     string nome;
     Estado *estado;
     public:
