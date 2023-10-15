@@ -1,0 +1,4 @@
+    Etapa 1: Individual
+
+1.  Um vector, pois o mesmo armazena os elementos em sequência, não precisa especificar espaço na mémoria, pode ser associado a vários sub-objetosDevido e 
+além ser muito usado em composição/agregação. 
